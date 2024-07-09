@@ -55,7 +55,7 @@ function executeOperation(operands, operators) {
         case "/":
             if (b == 0)
             {
-                operands.push(1);
+                operands.push(-1);
             }
             else
             {
