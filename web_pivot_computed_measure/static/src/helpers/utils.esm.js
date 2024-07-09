@@ -53,7 +53,14 @@ function executeOperation(operands, operators) {
             operands.push(a * b);
             break;
         case "/":
-            operands.push(a / b);
+            if (b == 0)
+            {
+                operands.push(1);
+            }
+            else
+            {
+                operands.push(a / b);
+            }
             break;
     }
 }
